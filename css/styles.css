@@ -1,0 +1,61 @@
+/* ================== Grid Layout ================== */
+.img1 {
+    grid-area: image1;
+}
+
+.img1 {
+    grid-area: image2;
+}
+
+.img1 {
+    grid-area: image3;
+}
+
+.img1 {
+    grid-area: image4;
+}
+
+.img1 {
+    grid-area: image5;
+}
+
+.img1 {
+    grid-area: image6;
+}
+
+.img1 {
+    grid-area: image7;
+}
+
+.img1 {
+    grid-area: image8;
+}
+
+.img1 {
+    grid-area: image9;
+}
+
+.img1 {
+    grid-area: image10;
+}
+
+.img1 {
+    grid-area: image11;
+}
+
+.img1 {
+    grid-area: image12;
+}
+
+.gallery {
+    max-width: 920px;
+    margin: auto;
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-areas: 
+        "image1 image2 image3 image4"
+        "image5 image6 image7 image8"
+        "image9 image10 image11 image12";
+    grid-gap: 40px;
+}
