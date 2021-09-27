@@ -1,4 +1,15 @@
 function imageSearch() {
-    const userInput = document.getElementById('search').value;
-    console.log(userInput);
+    const searchBar = document.getElementById('search');
+    searchBar.addEventListener('keyup', e => {
+        const searchString = e.target.value;
+        for(let i = 1; i <= 12; i++) {
+            let image = document.querySelector('.img' + i);
+            let caption = image.getAttribute('data-caption');
+            if(caption.includes(searchString)) {
+                console.log('yes');
+            } else {
+                console.log('no');
+            }
+        }
+    });
 }
