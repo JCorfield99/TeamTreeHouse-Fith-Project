@@ -1,14 +1,24 @@
 /* ================== Element Selectors ================== */
 
+* {
+    box-sizing: border-box;
+}
+
 input {
     width: 50%;
     margin: 30px 25%;
     padding: 15px 10px;
+    border: solid 2px #bbb;
+    border-radius: 10px;
 }
 
 /* ================== Class Selectors ================== */
 
-
+.img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
 
 /* ================== Grid Layout ================== */
 .gallery {
@@ -18,9 +28,14 @@ input {
     grid-gap: 30px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 /* ================== DRY CSS ================== */
 .main-header,
 .gallery {
-    max-width: 920px;
+    max-width: 1000px;
     margin: auto;
 }
