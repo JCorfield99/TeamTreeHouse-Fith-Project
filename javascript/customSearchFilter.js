@@ -5,10 +5,10 @@ function imageSearch() {
         for(let i = 1; i <= 12; i++) {
             let image = document.querySelector('.img' + i);
             let caption = image.getAttribute('data-caption');
-            if(caption.includes(searchString)) {
-                console.log('yes');
+            if(!caption.includes(searchString)) {
+                image.style.display = 'none';
             } else {
-                console.log('no');
+                image.style.display = 'flex';
             }
         }
     });
