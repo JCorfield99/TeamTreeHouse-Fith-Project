@@ -5,7 +5,7 @@ function imageSearch() {
         for(let i = 1; i <= 12; i++) {
             let image = document.querySelector('.img' + i);
             let caption = image.getAttribute('data-caption');
-            if(!caption.includes(searchString)) {
+            if(!caption.includes(searchString.toLowerCase())) {
                 image.style.display = 'none';
             } else {
                 image.style.display = 'flex';
